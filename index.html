@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>THE NECRONOMICON</title>
-    </head>
+        <title>the necronomicon</title>
+    
     <style type="text/css">
     body {background-image: url(old-dirty-page.jpg);
           background-position: center;
@@ -15,6 +15,13 @@
             font-family:Algerian, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 45px;
             font-style:inherit;}
+    .necronomiconpic {position:fixed;
+                      right: 40px;
+                      top: 30px;
+                      border: 4px solid darkslategray;
+                      width: 260px;
+                      height: 321px;
+                      margin-left: 15px;}        
     .deathDie {text-align: center;
                font-family: Lucida Calligraphy ,fantasy;
                font-size: 16px;
@@ -34,59 +41,101 @@
             font-size: 18px;
             font-style:unset;}
     .opis {font-weight: bold;
-            font-size: 20px;}        
+            font-size: 20px;}   
+    .cthulhuinfo {margin: 30px 15px 15px 20px;
+                  width: 70%;}
+        .cthulhu {font-weight: bold}          
+        #cthulhupic {width: 260px;
+                     float: left;
+                     margin: 15px 15px 0px 0px;
+                     }
+        .cthulhucytat {border: 2px solid;
+                       width: 38%;
+                       padding: 5px;}  
+    .dagoninfo {margin: 30px 15px 15px 20px;
+                width: 70%;} 
+        .dagon {font-weight: bold}  
+        #dagonpic {width: 300px}     
+    .yogsothothinfo {margin: 30px 15px 15px 20px;
+                     width: 70%}
+        .yogsothoth {font-weight: bold}
+        #yogsothothpic {width: 200px}
     </style>
+    </head>
     <body>
         <h1 class="tytul">NECRONOMICON</h1>
+        <div class="necronomiconpic">
+        <img src="necronomicon.jpg" width="260">
+        <h2 class="ancientOnes">PRZEDWIECZNI:</h2>
+           <ul class="spisPotworow">
+            <li><a style="text-decoration: none" href="cthulhu.html">Cthulhu</a></li>
+            <li><a style="text-decoration: none" href="#dagon">Dagon</a></li>
+            <li><a style="text-decoration: none" href="#yogsothoth">Yog-Sothoth</a></li>
+            </ul>
+        </div>
         <p class="deathDie">"That is not dead which can eternal lie,<br>
            And with strange aeons even death may die."</p>
            <h2 class="ancientOnes">PRZEDWIECZNI:</h2>
-           <ul class="spisPotworow">
+           <l class="spisPotworow">
             <li><a href="#cthulhu">Cthulhu</a></li>
             <li><a href="#dagon">Dagon</a></li>
             <li><a href="#yogsothoth">Yog-Sothoth</a></li>
-            </ul>
-           <h3 class="potwory" id="cthulhu"><strong>Cthulhu</strong></h3>
-           <img src="https://wattsupwiththat.files.wordpress.com/2014/10/cthulhu_climate_monster.jpg"
-            alt="Cthulhu" width="260">
+            </l>
+
+           <div class="cthulhuinfo">
+           <h3 class="potwory" id="cthulhu">Cthulhu</h3>
+           
            <!--ze strony fandom-->
+            <div class="cthulhucytat">
             <p class="cthulhuFhtagn">"Ph'nglui mglw'nafh Cthulhu R'lyeh wgah,nagl fhtagn."<br>
-               "W swym domu R'lyeh, martwy Cthulhu czeka śniąc."</p>
-            <p class="opis">Cthulhu jest Wielkim Przedwiecznym posiadającym niezbadaną moc. Obecnie spoczywa na dnie Payfiku<br>
-               w zatopionym mieście R'lyeh. Śpi snem głębokim jak śmierć dla nas ludzi. Czeka na odpowiedni moment<br> 
+               "W swym domu R'lyeh, martwy Cthulhu czeka śniąc."</p></div>
+            <p class="opis">
+                <img id="cthulhupic"src="https://wattsupwiththat.files.wordpress.com/2014/10/cthulhu_climate_monster.jpg"
+                    alt="Cthulhu">
+                Cthulhu jest Wielkim Przedwiecznym posiadającym niezbadaną moc. Obecnie spoczywa na dnie Payfiku
+               w zatopionym mieście R'lyeh. Śpi snem głębokim jak śmierć dla nas ludzi. Czeka na odpowiedni moment
                by znów powstać. U zarania dziejów jego obecność była wiodąca w kontaktach z naszym światem.</p>
-            <p class="cytat">"They were not composed altogether of flesh and blood. They had shape [...]<br> 
-                but that shape was not made of matter. When the stars were right,<br> 
-                They could plunge from world to world through the sky; but when the stars were wrong,<br>
-                They could not live. But although They no longer lived, They would never really die.<br> 
-                They all lay in stone houses in Their great city of R'lyeh, preserved by the<br> 
-                spells of mighty Cthulhu for a glorious resurrection when the stars and<br> 
+            <p class="cytat">"They were not composed altogether of flesh and blood. They had shape [...] 
+                but that shape was not made of matter. When the stars were right, 
+                They could plunge from world to world through the sky; but when the stars were wrong,
+                They could not live. But although They no longer lived, They would never really die. 
+                They all lay in stone houses in Their great city of R'lyeh, preserved by the 
+                spells of mighty Cthulhu for a glorious resurrection when the stars and 
                 the earth might once more be ready for Them.„</p> 
-           <h3 class="potwory" id= "dagon"><strong>Dagon</strong></h3>   
-           <img src="https://i.redd.it/5i7ijxfz15ez.jpg"
-                alt="dagon" width="200">
+                </div>
+           
+           <div class="dagoninfo">
+           <h3 class="potwory" id="dagon">Dagon</h3>   
+           <img id="dagonpic" src="dag1.jpg"
+                alt="dagon">
                 <!--ze strony fandom-->
-            <p class="opis"> Dagon jest bóstwem przewodzącym wszystkim Pochodzącym z Głębin,<br> 
-                amfibicznej, humanoidalnej rasie zamieszkującej Ziemskie oceany.<br> 
-                Poraz pierwszy pojawił się w krótkiej noweli Lovecrafta pod tytułem "Dagon",<br>
-                od tej pory jest często wymieniany w mitach.<br> 
+            <p class="opis"> Dagon jest bóstwem przewodzącym wszystkim Pochodzącym z Głębin,
+                amfibicznej, humanoidalnej rasie zamieszkującej Ziemskie oceany. 
+                Poraz pierwszy pojawił się w krótkiej noweli Lovecrafta pod tytułem "Dagon",
+                od tej pory jest często wymieniany w mitach.
                 Znany jest również jako Ojciec Dagon, jest on Wielkim Przedwiecznym oraz małżonkiem Matki Hydry.<br>
-                Dagon jest wielbiny przez Ezoteryczny Zakon Dagona, tajemny kult z siedzibą w Innsmouth.</p>    
-           <h3 class="potwory" id= "yogsothoth"><strong>Yog-Sothoth</strong></h3>  
-           <img src="https://lovecraftianscience.files.wordpress.com/2015/04/yog_sothoth_by_chivohit-d5b8wrr.jpg"
-                alt="yog-sothoth" width="200">
+                Dagon jest wielbiny przez Ezoteryczny Zakon Dagona, tajemny kult z siedzibą w Innsmouth.</p>
+            </div>
+
+           <div class="yogsothothinfo">
+           <h3 class="potwory" id= "yogsothoth">Yog-Sothoth</h3>  
+           <img id="yogsothothpic" src="yog_sothoth_by_chivohit-d5b8wrr.jpg"
+                alt="yog-sothoth">
            <!--ze strony fandom-->
-            <p class="cytat">"Yog-Sothoth knows the gate.<br>
-                Yog-Sothoth is the gate.<br> 
-                Yog-Sothoth is the key and guardian of the gate.<br>
-                Past, present, future, all are one in Yog-Sothoth.<br> 
-                He knows where the Old Ones broke through of old, and where They shall break through again.<br> 
-                He knows where They have trod earth's fields, and where They still tread them,<br> 
+            <p class="cytat">"Yog-Sothoth knows the gate.
+                Yog-Sothoth is the gate.
+                Yog-Sothoth is the key and guardian of the gate.
+                Past, present, future, all are one in Yog-Sothoth.
+                He knows where the Old Ones broke through of old, and where They shall break through again. 
+                He knows where They have trod earth's fields, and where They still tread them,
                 and why no one can behold Them as They tread."</p>
-            <p class="opis">Yog-Sothoth jest bytem kosmicznym oraz Zewnętrznym Bogiem. <br>
-                Narodzony z Bezimiennej Mgły, jest on protoplastą <a href="#cthulhu">Cthulhu</a>,<br>
-                Hastura Niewypowiedzianego oraz przodkiem Voormi'ego.<br> 
+            <p class="opis">Yog-Sothoth jest bytem kosmicznym oraz Zewnętrznym Bogiem.
+                Narodzony z Bezimiennej Mgły, jest on protoplastą <a href="#cthulhu">Cthulhu</a>,
+                Hastura Niewypowiedzianego oraz przodkiem Voormi'ego.
                 Jest również ojcem Wilbura Whateley'a.</p>
+            </div>
+
+                
 
     </body>
 </html>
