@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>banner</title>
+    <style type="text/css">
+
+        .elements-top {position:fixed;
+                        top:0px;
+                        right:0px;
+                        left:0px;
+                        display: flex;
+                       justify-content: space-evenly;
+                       background-color: rgb(156, 156, 156);
+                       height: 48px;
+                       z-index: 1;}
+        
+        .logo {position: fixed;
+                left: 2px;
+                display: table-cell;
+                line-height: 5px;
+                text-align: center;
+                font-family: sans-serif;
+                text-transform: uppercase;
+                font-size: 20px;
+                height: 42px;
+                margin: 3px 3px 3px 3px;
+                width: 140px;
+                background-color: #ffffff;
+                z-index: 2;}
+
+        .button-top {position: fixed;
+                   right:4px;
+                   top:4px;
+                    z-index: 3;}
+        .topelement {font-family: sans-serif;
+                    margin-right: 40px;
+                    cursor: pointer;}
+
+        .elementy-top {display: flex;
+                        margin-left: 600px;
+                        margin-right: 100px;
+                        z-index: 5;
+                        justify-content: space-between;}
+
+        .tytul {text-align: center;
+                font-family: sans-serif;
+                font-size: 60px;
+                font-weight: normal;
+                margin-top: 100px;}
+        .haslo {text-align: center;
+                font-family: sans-serif;
+                font-size: 25px;}
+
+        .button-middle {text-align: center;}
+        
+        .button {display: inline-block;
+                text-align: center;
+                cursor: pointer;
+                font-family: sans-serif;
+                margin: 0 auto;
+                font-size: 20px;
+                height: 20px;
+                width: 100px;
+                padding: 10px;
+                background-color: #444444;
+                color: #ffffff;
+                text-decoration: none;
+                -moz-border-radius: 7px;
+                -webkit-border-radius: 7px;
+                border-radius: 7px;}  
+                   
+
+        .element-title {font-family: sans-serif;
+                        text-transform: uppercase;
+                        font-weight: normal;
+                        font-size: 27px;
+                        padding: 10px;
+                        margin-bottom: 1px;}
+        .element-text {font-family: sans-serif;
+                        font-size: 13px;
+                        margin-right: 30px;
+                        margin-top: 1px;}
+        .container-elements {background-color: rgb(204, 204, 204);
+                             display: flex;
+                             flex-direction: row;
+                             justify-content:space-evenly;
+                             height: 280px;
+                             margin-top: 40px;
+                             margin-bottom: 150px;}
+        .item {background-color: rgb(255, 255, 255);
+               width: 360px;
+               height: auto;
+               margin-top: 60px;
+               margin-bottom: 60px;
+               cursor: pointer;}
+        #square-item {width: 160px;
+	                height: 160px;
+	                background-color: rgb(110, 110, 110);
+                    float: left;
+                    margin-right: 15px;}
+
+        .naglowek {text-align: center;
+                   font-family: sans-serif;
+                   font-size: 30px;
+                   font-weight: normal;
+                   margin-top: 40px;}
+        .naglowek-pod {text-align: center;
+                       font-family: sans-serif;
+                       font-size: 20px;}
+        .naglowek-text-1 {text-align: center;
+                          font-family: sans-serif;
+                          font-size: 15px;}
+        .naglowek-text-2 {text-align: center;
+                          font-family: sans-serif;
+                          font-size: 15px;}
+        .tytuly {background-color:rgb(237, 241, 241);
+                 width: 100%;
+                 height: 970px;}
+        #rectangle-1 {width: 40%;
+	                height: 250px;
+	                background-color: rgb(179, 182, 184);
+                    margin: 60px 30px 20px 5px;
+	                float:left;}
+        .tytul-1-all {margin-right: 300px;
+                      padding: 30px;
+                      margin-top: 70px;}
+        .tytul-1 {font-family: sans-serif;
+                  font-weight: normal;
+                  font-size: 27px;
+                  margin-bottom: 10px;
+                  margin-top:55px;}
+        .tytul-1-text {font-family: sans-serif;
+                       font-size: 12px;
+                       margin-top: 3px;}
+        #rectangle-2 {width: 40%;
+	                height: 250px;
+	                background-color:rgb(179, 182, 184);
+                    box-align: right;
+                    margin: 40px 5px 20px 30px;
+	                float:right;}
+        .tytul-2-all {text-align: right;
+                      margin-left: 300px;
+                      margin-top: 70px}
+        .tytul-2 {font-family: sans-serif;
+                  font-weight: normal;
+                  font-size: 27px;
+                  margin-bottom: 10px;}
+        .tytul-2-text {font-family: sans-serif;
+                       font-size: 12px;}
+        #rectangle-3 {width: 40%;
+	                height: 250px;
+	                background-color:rgb(179, 182, 184);
+                    margin: 70px 30px 0px 5px;
+	                float:left;}
+        .tytul-3-all {margin-right: 300px;
+                      margin-top: 50px;
+                      padding: 30px;
+                      margin-bottom: 70px;}
+        .tytul-3 {font-family: sans-serif;
+                  font-weight: normal;
+                  font-size: 27px;
+                  margin-bottom: 10px;}
+        .tytul-3-text {font-family: sans-serif;
+                       font-size: 12px;
+                       margin-bottom: 0px;}
+
+        .opisfirmy {font-family: sans-serif;
+                    font-size: 30px;
+                    font-weight: normal;}
+        .opisfirmy-pod {font-family: sans-serif;
+                        font-size: 20px;}
+        .opisfirmy-text {font-family: sans-serif;
+                         font-size: 15px;
+                         width: 90%;
+                         height: 80%;}
+        .opisfirmy-all {margin-top: 70px;
+                        margin-bottom: 70px;
+                        width: 90%;}
+        #rectangle-opisfirmy {position: static;
+                              right: 0px;
+                              width: 100%;
+                              height: auto;
+                              background-color: rgb(179, 182, 184);}
+        .container-opisfirmy {margin-top: 0px;
+                             display: flex;
+                             flex-direction: row;
+                             justify-content: flex-start;
+                             height: auto;}
+
+        .container-danefirmy {display: flex;
+                              flex-direction: row;
+                              justify-content: space-between;
+                              align-content: flex-start;
+                              background-color: rgb(66, 66, 66);}
+        .mapagoogle {display: table-cell;
+                     vertical-align: middle;
+                    width: 600px;
+                    height: 350px;
+                    background-color:rgb(255, 255, 255);
+                    margin-top: 70px;
+                    margin-bottom: 70px;
+                    font-family: sans-serif;
+                    font-size: 20px;
+                    text-align: center;
+                    line-height: 350px;
+                    cursor: pointer;}
+        .danefirmy {width: 400px;
+                    height: 350px;
+                    margin-top: 70px;
+                    margin-bottom: 70px;
+                    margin-right: 100px;
+                    font-family: sans-serif;
+                    color: rgb(255, 255, 255);}
+        .nazwafirmy {font-size: 40px;
+                     font-weight: normal;}
+        .danefirmy-text {font-size: 18px;}
+    
+    </style>
+
+    </head>
+    <body>
+            <div class="elements-top">
+            <div class="logo"><p>logo</p></div>
+        
+        <div class="button-top">
+            <a class="button" href="#">button</a>
+            </div>
+       
+
+        <div class="elementy-top">
+       <div class="topelement" href="#"><p>element 1</p></div>
+       <div class="topelement" href="#"><p>element 2</p></div>
+       <div class="topelement" href="#"><p>element 3</p></div>
+       <div class="topelement" href="#"><p>element 4</p></div>
+        </div>
+    </div>
+
+        <h1 class="tytul">Banner</h1>
+        <div class="haslo">
+        <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Nunc sed pulvinar dui,<br> 
+            nec porta dolor.</p></div>
+
+        <div class="button-middle">
+        <a class="button" href="#">button</a>
+        </div>
+
+        <div class="container-elements">
+                              
+            <div class="item">
+                <div id="square-item"></div> 
+                <h2 class="element-title">element 1</h2>
+        
+                <p class="element-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Praesent vitae ligula sollicitudin,</p></div>
+                     
+                <div class="item">
+                <div id="square-item"></div>
+                <h2 class="element-title">element 2</h2>
+                <p class="element-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Praesent vitae ligula sollicitudin,</p></div>
+
+            <div class="item">
+                <div id="square-item"></div>
+                <h2 class="element-title">element 3</h2>
+                <p class="element-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Praesent vitae ligula sollicitudin,</p></div>
+            </div>
+                        
+
+        <h2 class="naglowek">Nagłówek</h2> 
+        <p class="naglowek-pod">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="naglowek-text-1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+           Praesent vitae ligula sollicitudin, volutpat turpis sed, lacinia velit. Nam metus dui, pretium vel metus vel,
+           viverra aliquet mauris. Nulla dictum massa vel tristique sagittis. Sed scelerisque odio mi, sit amet condimentum leo imperediet sed.
+           Praesent condimentum turpis sit amet bibendum pretium. Quisque in mi turpis.
+           Nullam quis erat iaculis, tincidunt libero quis, dictum diam. Praesent eget diam at urna interdum aliquet.
+           Pellentesque ultricies magna in interdum hendrerit. Suspendisse vitae mattis massa, non bibendum arcu.
+           In dictum leo erat, sed ornare purus pulvinar vel. Fusce a porta ante. Sed pretium tincidunt pulvinar.
+           Quisque iaculis varius vestibulum. Etiam sit amet urna at arcu tempor viverra.</p>
+           </div>
+        <div class="naglowek-text-2"> 
+        <p>Donec vulputate elit lorem, ac faucibus lacus ultricies vitae. Vivamus iaculis lobortis purus.
+           Maecenas in aiquet mi, id hendredit lectus. Curabitur non purus ac tellus maximus tepus ut sed lectus.
+           Vestibulum sollicitudin quis nulla vel porta. Integer varius varius vehicula. Proin mollis pretium erat, at lacinia dui ultricies ac.
+           Duis vestibulum massa tempor massa tempus euismod. Maecenas suscipit ultricies mauris placerat porta. Nunc dolor enim, sollicitudin ut ultrices sed, malesuada quis sem.
+           Donec eget commodo mauris, sit amet scelerisque tortor. Fusce in lacina justo. Etiam porta ac massa sed venenatis. Maecenas id tellus vulputate, tristique dolor nec, rhoncus ante.
+           Vestibulum tristique nec metus sit amet mollis.</p>
+           </div>
+
+        <div class="tytuly">
+                <div id="rectangle-1"></div>
+        <div class="tytul-1-all"> 
+                
+        <h3 class="tytul-1">Tytuł 1</h3>
+        <p class="tytul-1-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Praesent vitae ligula sollicitudin, volutpat turpis sed, lacinia velit. Nam metus dui, pretium vel metus vel,
+                viverra aliquet mauris. Nulla dictum massa vel tristique sagittis. Sed scelerisque odio mi, sit amet condimentum leo imperediet sed.
+                Praesent condimentum turpis sit amet bibendum pretium. Quisque in mi turpis.
+                Nullam quis erat iaculis, tincidunt libero quis, dictum diam. Praesent eget diam at urna interdum aliquet.
+                Pellentesque ultricies magna in interdum hendrerit. Suspendisse vitae mattis massa, non bibendum arcu.
+                In dictum leo erat, sed ornare purus pulvinar vel. Fusce a porta ante. Sed pretium tincidunt pulvinar.
+                Quisque iaculis varius vestibulum. Etiam sit amet urna at arcu tempor viverra.</p>
+        </div> 
+        <div id="rectangle-2"></div>
+        <div class="tytul-2-all">
+                
+                <h3 class="tytul-2">Tytuł 2</h3>  
+                <p class="tytul-2-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Praesent vitae ligula sollicitudin, volutpat turpis sed, lacinia velit. Nam metus dui, pretium vel metus vel,
+                    viverra aliquet mauris. Nulla dictum massa vel tristique sagittis. Sed scelerisque odio mi, sit amet condimentum leo imperediet sed.
+                    Praesent condimentum turpis sit amet bibendum pretium. Quisque in mi turpis.
+                    Nullam quis erat iaculis, tincidunt libero quis, dictum diam. Praesent eget diam at urna interdum aliquet.
+                    Pellentesque ultricies magna in interdum hendrerit. Suspendisse vitae mattis massa, non bibendum arcu.
+                    In dictum leo erat, sed ornare purus pulvinar vel. Fusce a porta ante. Sed pretium tincidunt pulvinar.
+                    Quisque iaculis varius vestibulum. Etiam sit amet urna at arcu tempor viverra.</p>
+                </div> 
+                <div id="rectangle-3"></div> 
+        <div class="tytul-3-all">
+                       
+                <h3 class="tytul-3">Tytuł 3</h3>  
+                <p class="tytul-3-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Praesent vitae ligula sollicitudin, volutpat turpis sed, lacinia velit. Nam metus dui, pretium vel metus vel,
+                    viverra aliquet mauris. Nulla dictum massa vel tristique sagittis. Sed scelerisque odio mi, sit amet condimentum leo imperediet sed.
+                    Praesent condimentum turpis sit amet bibendum pretium. Quisque in mi turpis.
+                    Nullam quis erat iaculis, tincidunt libero quis, dictum diam. Praesent eget diam at urna interdum aliquet.
+                    Pellentesque ultricies magna in interdum hendrerit. Suspendisse vitae mattis massa, non bibendum arcu.
+                    In dictum leo erat, sed ornare purus pulvinar vel. Fusce a porta ante. Sed pretium tincidunt pulvinar.
+                    Quisque iaculis varius vestibulum. Etiam sit amet urna at arcu tempor viverra.</p>
+                </div> 
+                </div>
+        
+        <div class="container-opisfirmy">
+        <div class="opisfirmy-all">
+        <h2 class="opisfirmy">Opis firmy</h2>
+        <p class="opisfirmy-pod">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="opisfirmy-text">
+        <div class="opisfirmy-text-1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Praesent vitae ligula sollicitudin, volutpat turpis sed, lacinia velit. Nam metus dui, pretium vel metus vel,
+            viverra aliquet mauris. Nulla dictum massa vel tristique sagittis. Sed scelerisque odio mi, sit amet condimentum leo imperediet sed.
+            Praesent condimentum turpis sit amet bibendum pretium. Quisque in mi turpis.
+            Nullam quis erat iaculis, tincidunt libero quis, dictum diam. Praesent eget diam at urna interdum aliquet.
+            Pellentesque ultricies magna in interdum hendrerit. Suspendisse vitae mattis massa, non bibendum arcu.
+            In dictum leo erat, sed ornare purus pulvinar vel. Fusce a porta ante. Sed pretium tincidunt pulvinar.
+            Quisque iaculis varius vestibulum. Etiam sit amet urna at arcu tempor viverra.</p>    
+        </div>
+
+        <div class="opisfirmy-text-2">
+        <p>Donec vulputate elit lorem, ac faucibus lacus ultricies vitae. Vivamus iaculis lobortis purus.
+            Maecenas in aiquet mi, id hendredit lectus. Curabitur non purus ac tellus maximus tepus ut sed lectus.
+            Vestibulum sollicitudin quis nulla vel porta. Integer varius varius vehicula. Proin mollis pretium erat, at lacinia dui ultricies ac.
+            Duis vestibulum massa tempor massa tempus euismod. Maecenas suscipit ultricies mauris placerat porta. Nunc dolor enim, sollicitudin ut ultrices sed, malesuada quis sem.
+            Donec eget commodo mauris, sit amet scelerisque tortor. Fusce in lacina justo. Etiam porta ac massa sed venenatis. Maecenas id tellus vulputate, tristique dolor nec, rhoncus ante.
+            Vestibulum tristique nec metus sit amet mollis.</p>    
+        </div>
+
+        <div class="opisfirmy-text-3">
+        <p>Vivamus venenatis ac lectus at ullamcorper. Cras convallis quam venenatis quam sollicitudin, eu imperediet erat efficitur.
+            Nulla bibendum leo vel sapien pretium, ac commodo diu iaculis. Ut vitae leo in tortor sollicitudin congue at vitae mauris.
+            Vestibulum gravida finibus est, maximus consectetur ipsum dapibus ut. Quisque eu maximus felis. Ut urna ipsum, bibendum convallis quam at, egestas dictum mi.
+            Ut efficitur faucibus neque, a gravida arcu blandit tempus. Aliquam at nibh in urna imperdiet volutpat sit amet sit amet dui.</p>    
+        </div>
+
+        <div class="opisfirmy-text-3">
+        <p>Ut sed dapibus felis, sed tincidunt magna. Nullam sed pretium urna. Morbi varius molestie magna, non hendrerit est porta et.
+            Ut ut est eu dui imperediet imperediet. Duis pretium venenatis nunc quis sagittis. Aenean purus est, dapibus in pellentesque eu, tincidunt id felis.
+            Sed eleifend placerat lacus, sit amet placerat tortor tempor eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+            Vestibulum venenatis et purus quis luctus. Praesent blandit rhoncus est, ac ullamcorper nibh congue eget.
+            Curabitur nisi magna, placerat in congue quis, sagittis sit amet justo.</p>    
+        </div>
+
+        <div class="opisfirmy-text-4">
+        <p>Etiam vulputate vel magna viverra porttitor. Donec nisl turpis, condimentum a volutpat vitae, lobortis sed velit.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus in laoreet metus, nec bibendum dui. Sed finibus faucibus mi, 
+            mattis faucibus ipsum elementum vitae. Vivamus eu urna a mi vehicula imperedit quis ut erat. Sed tempor, lacus at pulvimar porttitor, massa orci fringilla augue, quis tristique tellus lacus ac erat.</p>    
+        </div>
+        </div>
+        </div>
+        
+        <div id="rectangle-opisfirmy"></div>
+        </div>
+
+        <div class="container-danefirmy">
+        <p class="mapagoogle" href="#">Mapa google</p>
+
+        <div class="danefirmy">
+            <h2 class="nazwafirmy">Nazwa Firmy</h2>
+            <p class="danefirmy-text">ul. Ulica 12/34<br>
+            Miasto 12-345</p>
+            <p>tel 1:123-456-789<br>
+            tel 2: 987-654-321</p>
+            <p>e-mail 1: email1@gmail.com<br>
+            e-mail 2: email2@gmail.com</p>
+        
+        </div>
+        </div>
+    </body>
